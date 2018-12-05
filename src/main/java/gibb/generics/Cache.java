@@ -6,15 +6,15 @@ package gibb.generics;
  * User: Daniel Senften <daniel@senften.org>
  * Date: 05.12.18, 21:21
  */
-public class Cache<T> {
+class Cache<T> {
 
     private T type;
 
-    public void add(T type) {
+    void add(T type) {
         this.type = type;
     }
 
-    public T get() {
+    T get() {
         return type;
     }
 }
