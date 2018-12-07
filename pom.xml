@@ -8,7 +8,32 @@
     <artifactId>gibb</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <organization>
+        <name>Talent Factory</name>
+        <url>http://www.talent-factory.ch</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <name>Daniel Senften</name>
+            <email>daniel@senften.org</email>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
+
+    <properties>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- dependency versions -->
+        <lombok.version>1.18.4</lombok.version>
+        <junit.jupiter.version>5.3.2</junit.jupiter.version>
+
+    </properties>
+
+
     <build>
+
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -18,21 +43,29 @@
                 </configuration>
             </plugin>
         </plugins>
+
     </build>
 
+
     <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.4</version>
+            <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>RELEASE</version>
+            <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
+
 
 </project>
