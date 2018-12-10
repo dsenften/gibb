@@ -28,6 +28,11 @@
         <!-- dependency versions -->
         <lombok.version>1.18.4</lombok.version>
         <junit.jupiter.version>5.3.2</junit.jupiter.version>
+        <voltdb.version>8.3</voltdb.version>
+        <jasperreports.version>6.7.0</jasperreports.version>
+        <itext.version>RELEASE</itext.version>
+        <olap4j.version>RELEASE</olap4j.version>
+        <postgres.version>RELEASE</postgres.version>
 
     </properties>
 
@@ -63,6 +68,42 @@
             <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.voltdb/voltdbclient -->
+        <dependency>
+            <groupId>org.voltdb</groupId>
+            <artifactId>voltdbclient</artifactId>
+            <version>${voltdb.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports -->
+        <dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>${jasperreports.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.lowagie/itext -->
+        <dependency>
+            <groupId>com.lowagie</groupId>
+            <artifactId>itext</artifactId>
+            <version>${itext.version}</version>
+            <type>pom</type>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.olap4j/olap4j -->
+        <dependency>
+            <groupId>org.olap4j</groupId>
+            <artifactId>olap4j</artifactId>
+            <version>${olap4j.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgres.version}</version>
         </dependency>
 
     </dependencies>
