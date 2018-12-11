@@ -1,10 +1,18 @@
 package gibb.inheritance;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 /**
  * User: Daniel Senften <daniel@senften.org>
  * Date: 05.12.18, 22:13
  */
+@ToString
+@Getter
+@Setter
 public abstract class Employee {
+
 
     private String firstName;
     private String lastName;
@@ -14,27 +22,4 @@ public abstract class Employee {
         this.lastName = lastName;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
-    }
 }

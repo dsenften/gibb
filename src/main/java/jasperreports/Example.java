@@ -15,7 +15,7 @@ import java.util.Map;
  */
 public class Example {
 
-    private static String directory = "src/main/resources/";
+    private static String directory = "src/resources/";
     private static String reportName = "MyReport";
 
 

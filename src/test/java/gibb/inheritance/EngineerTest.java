@@ -15,8 +15,8 @@ class EngineerTest {
 
         Engineer engineer = new Engineer("Daniel", "Senften");
 
-        String expected = "Employee{firstName='Daniel', lastName='Senften'}" +
-                "\n\t" + "Engineer{discipline='Computer Science'}";
+        String expected = "Employee(firstName=Daniel, lastName=Senften)\n"
+              + "\tEngineer{discipline='Computer Science'}";
         assertEquals(expected, engineer.toString());
     }
 }
