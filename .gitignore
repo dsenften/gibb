@@ -347,7 +347,7 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 .idea
-src/main/resources/MyReport.pdf
+src/resources/MyReport.pdf
 target/classes/META-INF/
 target/classes/MyReport.jrxml
 target/generated-sources/
