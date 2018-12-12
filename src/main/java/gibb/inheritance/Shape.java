@@ -15,4 +15,6 @@ public abstract class Shape {
 
     private Point point;
 
+    private Rectangle rectangle;
+
 }

@@ -21,4 +21,18 @@ public class Point extends Object {
         this.y = y;
     }
 
+    public void setX(double x) {
+        if (x < 0) {
+            throw new IllegalArgumentException("Negative values not allowe: " + x);
+        }
+        this.x = x;
+    }
+
+    public void setY(double y) {
+        if (y < 0) {
+            throw new IllegalArgumentException("Negative values not allowe: " + x);
+        }
+        this.y = y;
+    }
+
 }
