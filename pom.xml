@@ -26,7 +26,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- dependency versions -->
-        <lombok.version>1.18.4</lombok.version>
         <junit.jupiter.version>5.3.2</junit.jupiter.version>
 
     </properties>
@@ -53,7 +52,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
+            <version>RELEASE</version>
             <scope>provided</scope>
         </dependency>
 
